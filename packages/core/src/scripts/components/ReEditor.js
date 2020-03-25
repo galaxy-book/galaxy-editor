@@ -31,6 +31,11 @@ export default class ReEditor extends React.Component {
     onChange(value);
   };
 
+  handleBlur = () => {
+    const { onBlur } = this.props;
+    onBlur && onBlur();
+  };
+
   onChangeData = (changer, callback = () => {}) => {
     this.setState(
       state => ({
@@ -188,6 +193,7 @@ export default class ReEditor extends React.Component {
         <Editor
           value={value}
           onChange={this.handleChange}
+          onBlur={this.handleBlur}
           renderMark={this.renderMark}
           renderNode={this.renderNode}
           decorateNode={this.decorateNode}

@@ -17,10 +17,17 @@ export default class ReEditor extends React.Component {
   }
 
   handleChange = value => {
+    const { onChange } = this.props;
     this.setState({
       value
     });
-    this.props.onChange(value);
+    onChange && onChange(value);
+  };
+
+  handleBlur = () => {
+    const { onBlur } = this.props;
+    console.log(123)
+    onBlur && onBlur();
   };
 
   render() {
@@ -42,6 +49,7 @@ export default class ReEditor extends React.Component {
           ref={this.editor}
           value={value}
           onChange={this.handleChange}
+          onBlur={this.handleBlur}
           readOnly={readOnly}
           onImageUpload={onImageUpload}
         />

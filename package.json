@@ -18,6 +18,7 @@
     ]
   },
   "scripts": {
+    "check-types": "tsc",
     "test": "eslint packages",
     "start": "lerna run start --parallel",
     "build": "lerna run build",
@@ -37,9 +38,14 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
-    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/node": "^13.9.3",
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
     "autoprefixer": "^9.4.10",
     "babel-eslint": "^10.0.1",
     "babel-plugin-import": "^1.11.0",
@@ -57,7 +63,9 @@
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.1.2",
     "postcss-simple-vars": "^5.0.2",
-    "prettier": "1.16.4"
+    "prettier": "1.16.4",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "@babel/plugin-proposal-decorators": "^7.3.0",
