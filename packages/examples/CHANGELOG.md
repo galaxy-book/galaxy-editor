@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.9](https://github.com/galaxy-book/galaxy-editor/compare/v0.5.8...v0.5.9) (2020-03-26)
+
+**Note:** Version bump only for package @galaxy-editor/examples
+
+
+
+
+
+
 ## [0.5.8](https://github.com/wowlusitong/re-editor/compare/v0.5.7...v0.5.8) (2019-08-25)
 
 **Note:** Version bump only for package @re-editor/examples
